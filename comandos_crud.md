@@ -70,4 +70,16 @@ SELECT nome FROM produtos WHERE fabricante_id <> 5;
 SELECT nome, descricao FROM produtos
 WHERE fabricante_id = 2 OR fabricante_id = 3; 
 
+-- ORDENANDO POR ORDEM CRESCENTE (ASC - padrão)
+SELECT nome, descricao FROM produtos ORDER BY nome;
+
+-- ORDENANDO POR ORDEM DECRESCENTE (DESC)
+SELECT nome, descricao FROM produtos ORDER BY nome DESC;
+
+--COUNT (campo especial) é uma funcção de contagem de registros
+SELECT count(id) FROM produtos;
+
+--Usando AS para definir um apelido para a coluna de resultados
+SELECT count(id) AS Quantidade FROM produtos;
+
 ```
